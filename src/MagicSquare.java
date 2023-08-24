@@ -1,6 +1,6 @@
 import java.util.Collections;
 import java.util.Arrays;
-public class MagicScuare {
+public class MagicSquare {
     public static void main(String[] args) {
         crear_cuadrado();
     }
@@ -28,21 +28,21 @@ public class MagicScuare {
             }
             System.out.println();
         }
-        isMagicScuare(cuadrado);
+        isMagicSquare(cuadrado);
     }
-    public static void isMagicScuare(int[][] scuare){
+    public static void isMagicSquare(int[][] square){
         boolean isMagic = true;
-        for (int i = 0; i < scuare.length; i++){
-            if (scuare[i][0] + scuare[i][1] + scuare[i][2] != 15){
+        for (int i = 0; i < square.length; i++){
+            if (square[i][0] + square[i][1] + square[i][2] != 15){
                 isMagic = false;
             }
-            if (scuare[0][i] + scuare[1][i] + scuare[2][i] != 15){
+            if (square[0][i] + square[1][i] + square[2][i] != 15){
                 isMagic = false;
             }
-            if (scuare[0][0] + scuare[1][1] + scuare[2][2] != 15){
+            if (square[0][0] + square[1][1] + square[2][2] != 15){
                 isMagic = false;
             }
-            if (scuare[0][2] + scuare[1][1] + scuare[2][0] != 15){
+            if (square[0][2] + square[1][1] + square[2][0] != 15){
                 isMagic = false;
             }
         }
