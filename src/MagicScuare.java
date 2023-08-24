@@ -1,5 +1,3 @@
-import java.util.Collections;
-import java.util.Arrays;
 public class MagicScuare {
     public static void crear_cuadrado(){
         Integer[] lista_numeros = new Integer[9];
